@@ -28,12 +28,13 @@ class _AddEditLabelScreenState extends State<AddEditLabelScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: Text(widget.initialLabel == null
             ? 'Agregar etiqueta'
             : 'Editar etiqueta'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(16),
+        padding: EdgeInsets.all(50),
         child: Column(
           children: [
             TextField(

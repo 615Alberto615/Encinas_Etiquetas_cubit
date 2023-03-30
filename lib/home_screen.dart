@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Etiquetas')),
+      appBar: AppBar(backgroundColor: Colors.black, title: Text('Etiquetas')),
       body: Column(
         children: [
           Padding(
@@ -20,6 +20,7 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.cyan,
         onPressed: () async {
           final newLabel = await Navigator.push(
             context,
